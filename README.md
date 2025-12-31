@@ -1,4 +1,4 @@
-# noise
+# 2d-noise-image-generator
 
 2D noise image generator, written in C++.
 
@@ -23,33 +23,33 @@ $ cmake --build build -j
 
 Run:
 
-$ ./noise --out out.png
+$ ./2d-noise-image-generator --out out.png
 
 For additional options pass `--help` (or `--h`):
 
-$ ./noise --help
+$ ./2d-noise-image-generator --help
 
 ## Quick examples
 
 Perlin heightmap with terrain colors:
 
-$ ./noise --type Perlin --width 1024 --height 1024 --seed 123 --colormap terrain --out h.png
+$ ./2d-noise-image-generator --type Perlin --width 1024 --height 1024 --seed 123 --colormap terrain --out h.png
 
 Tileable texture (seamless edges):
 
-$ ./noise --type OpenSimplex2S --tile --tile-period 1024 --out tile.png
+$ ./2d-noise-image-generator --type OpenSimplex2S --tile --tile-period 1024 --out tile.png
 
 Cellular noise (switch return type):
 
-$ ./noise --type Cellular --cell-return CellValue --out cell.jpg
+$ ./2d-noise-image-generator --type Cellular --cell-return CellValue --out cell.jpg
 
 Domain warp:
 
-$ ./noise --warp --warp-amp 2.0 --warp-fractal-type DomainWarpProgressive --warp-octaves 4 --out warped.png
+$ ./2d-noise-image-generator --warp --warp-amp 2.0 --warp-fractal-type DomainWarpProgressive --warp-octaves 4 --out warped.png
 
 Max-contrast mapping and CSV dump:
 
-$ ./noise --normalize minmax --csv out.csv --out out.png
+$ ./2d-noise-image-generator --normalize minmax --csv out.csv --out out.png
 
 ## Core options
 

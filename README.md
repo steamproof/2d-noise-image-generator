@@ -2,7 +2,6 @@
 
 2D noise image generator, written in C++.
 
-| | | | |
 |---|---|---|---|
 | ![Example usage image.](./examples/grayscale.png) | ![Example usage image.](./examples/island_tile.png) | ![Example usage image.](./examples/marble.png) | ![Example usage image.](./examples/alien.png) |
 | ![Example usage image.](./examples/plasma.png) | ![Example usage image.](./examples/ridges.png) | ![Example usage image.](./examples/clouds.png) | ![Example usage image.](./examples/topo.png) |
@@ -193,32 +192,34 @@ Format:
 }
 ```
 
-Output files
---out <path> (default out.png)
+## Output files
 
---format <png|jpg|jpeg|ppm> (optional)
+* `--out <path>` (default out.png)
+* `--format <png|jpg|jpeg|ppm>` (optional)
 
-If omitted, the tool infers format from --out extension.
+Notes:
 
-If extension is unknown, it defaults to png.
+* If omitted, the tool infers format from --out extension.
+* If extension is unknown, it defaults to png.
 
-CSV output
---csv <path.csv> (optional)
+## CSV
+
+CSV Output:
+
+* `--csv <path.csv>` (optional)
 
 CSV contents:
 
-Dumps the normalized t values in [0,1] (the same values used for colormap/image mapping).
+* Dumps the normalized `t` values in `[0,1]` (the same values used for colormap/image mapping).
+* One row per image row, comma-separated.
 
-One row per image row, comma-separated.
+## Third-party
 
-Third-party
+FastNoiseLite: 
 
-FastNoiseLite: third_party/FastNoiseLite.h
+* third_party/FastNoiseLite.h
 
 stb:
 
-third_party/stb_image_write.h (PNG/JPEG writing)
-
-third_party/stb_image.h (ramp image loading)
-
-::contentReference[oaicite:0]{index=0}
+* third_party/stb_image_write.h (PNG/JPEG writing)
+* third_party/stb_image.h (ramp image loading)

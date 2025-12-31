@@ -2,8 +2,10 @@
 
 2D noise image generator, written in C++.
 
-![Example usage image.](./examples/grayscale.png) ![Example usage image.](./examples/island_tile.png) ![Example usage image.](./examples/marble.png) ![Example usage image.](./examples/alien.png) 
-![Example usage image.](./examples/plasma.png) ![Example usage image.](./examples/ridges.png) ![Example usage image.](./examples/clouds.png) ![Example usage image.](./examples/topo.png)
+| | | | |
+|---|---|---|---|
+| ![Example usage image.](./examples/grayscale.png) | ![Example usage image.](./examples/island_tile.png) | ![Example usage image.](./examples/marble.png) | ![Example usage image.](./examples/alien.png) |
+| ![Example usage image.](./examples/plasma.png) | ![Example usage image.](./examples/ridges.png) | ![Example usage image.](./examples/clouds.png) | ![Example usage image.](./examples/topo.png) |
 
 Supported output formats:
 
@@ -70,7 +72,6 @@ Noise type:
 3D rotation:
 
 * `--rotation3d <None|ImproveXYPlanes|ImproveXZPlanes>` (default `None`)
-  * This mainly matters for 3D noise and 3D warp, but it’s safe to use anytime.
 
 ## Tileable textures
 
@@ -190,6 +191,7 @@ Format:
     { "pos": 1.0, "color": "#ffffff" }
   ]
 }
+```
 
 Output files
 --out <path> (default out.png)
